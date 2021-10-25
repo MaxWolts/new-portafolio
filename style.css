@@ -196,6 +196,9 @@ html {
     border-top: 2px solid var(--blue);
     text-align: center;
 }
+.contact a {
+    text-decoration: underline;
+}
 .contact figure {
     margin: auto;
 }
