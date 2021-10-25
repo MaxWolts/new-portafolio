@@ -1,0 +1,54 @@
+.about {
+    display: grid;
+    grid-template-rows: 0 1fr;
+}
+.container-about {
+    width: 80%;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+
+.photo {
+    display: block;
+    justify-self: center;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 100%;
+    box-shadow: -12px 7px 0px 10px  #00C1D4;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-me {
+    align-self: center;
+}
+
+.title-project {
+    display: none;
+}
+.title-project-ghost {
+    display: block;
+}
+.projects {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.project {
+    width: 80%;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+.project-image {
+    justify-self: center;
+}
+.project-description {
+    align-self: center;
+}

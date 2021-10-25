@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxWolts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruthie&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&family=Ruthie&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./breakPoint.css" media="(min-width: 720px)">
+</head>
+
+<body>
+    <section class="sections hero">
+        <figure class="hero_image">
+            <img src="./assets/background2.jpg" alt="">
+        </figure>
+        <div id='welcome' class="hero__text">
+            <span>Welcome!</span>
+        </div>
+        <div class="hero__text hero-name">
+            <h1>Max Wolts</h1>
+            <p>Frontend developer</p>
+        </div>
+        <nav class="hero__nav hero__text">
+            <ul>
+                <li>
+                    <a href="#about" class="link2" onclick="scroll()">about</a>
+                </li>
+                <li>
+                    <a href="#projects" class="link2">projects</a>
+                </li>
+                <li>
+                    <a class='link2' href="https://www.twitter.com/MrWolts" > Twitter </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hero__degradient"></div>
+    </section>
+    <section class="sections about" id="about">
+        <div class="section-title">
+            <h2>about</h2>
+        </div>
+        <div class="container-about">
+            <figure class="photo">
+                <img src="./assets/img-f2.jpg" alt="">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+            </figure>
+            <div class="about-me">
+                <h3 class="sub-title">Hola! soy Frontend Developer (Trainee)</h3>
+                <p class="text">
+                    Busco crear webs bonitas en diseño,performance, accesibilidad y en codigo. 
+                    Estoy constantemente aprendiendo sobre programacion, diseño y otras areas para lograrlo.
+                </p>
+                <p class="text">
+                    Actualmente estudio principalmente <strong>Desarrollo Web</strong>, e <strong>Ingles</strong> en <strong> <a href="https://platzi.com">Platzi</a> </strong> .
+                    Mi objetivo a futuro es explorar más areas de la Programación.
+                </p>
+                <p class="text">
+                    Me encantan las historias ya sean en libros, video juegos, audio o en películas y series.
+                </p>
+            </div>
+        </div>
+
+        <!-- mejora los nombres de las clases -->
+        <nav class="hero__nav hero__text">
+            <ul>
+                <li>
+                    <a href="#welcome" class="link2" onclick="scroll()">home</a>
+                </li>
+                <li>
+                    <a href="#projects" class="link2">projects</a>
+                </li>
+                <li>
+                    <a class='link2' href="https://www.twitter.com/MrWolts" > Twitter </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section class="sections projects" id="projects">
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+            
+        <div class="project">
+            <h3 class="title-project"> Poké-Cards</h3>
+            <figure class="project-image">
+                <img src="./assets/pokeApi1.png" alt="">
+            </figure>
+            <div class="project-description">
+                <h3 class="title-project-ghost"> Poké-Cards</h3>
+                <p class="text">
+                    ¿Buscas un Pokémon?
+                    Solo poniendo su nombre o su numero en la Pokedex Nacional se generara una imagen de el, su o sus tipos, ademas de sus stats base.
+    
+                    Hecho con HTML, JS y CSS realiza peticiones a la pokéAPI para obtener información del pokemon solicitado y con ella llenar la tarjeta y personalizarla segun el tipo del Pokémon.
+    
+                    <a href="https://mrwolts.github.io/poke-cards/" class="link2">Visitar Poké-Cards</a>
+                </p>
+            </div>
+        </div>
+        <nav class="hero__nav hero__text">
+            <ul>
+                <li>
+                    <a href="#welcome" class="link2" onclick="scroll()">home</a>
+                </li>
+                <li>
+                    <a href="#projects" class="link2">projects</a>
+                </li>
+                <li>
+                    <a class='link2' href="https://www.twitter.com/MrWolts" > Twitter </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section class="sections contact" id="contact">
+        <p class="text text-end">made with love 💓</p>
+        <a href="#friend" class="link2" onclick="cosita()">don't go alone take this</a>
+        <figure>
+            <img class='friend' id='friend'src="./assets/this.jpg" alt="">
+        </figure>
+    </section>
+</body>
+<script src="./index.js"></script>
+</html>
