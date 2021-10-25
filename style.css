@@ -154,7 +154,7 @@ html {
 .project-image {
     max-width: 320px;
     overflow: hidden;
-    
+    margin: auto;
 }
 .project-image img {
     max-width: 320px;
