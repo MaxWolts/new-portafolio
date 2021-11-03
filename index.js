@@ -5,22 +5,30 @@ $sections.push(document.querySelector(".about"))
 const $project = document.querySelector('.projects')
 
 $sections.forEach(element => {
+    if(window.innerHeight> 630) {
         element.style.height = window.innerHeight + 'px'
-        if(window.innerWidth >= 720){
-            $project.style.height = window.innerHeight + 'px'
-        }
+       
+
+    }else {
+        element.style.height = window.innerWidth + 'px'
+
+    }
 })
+
+
 
 //busca una manera de optimizar
 window.addEventListener('resize', ()=> {
-    if(window.innerWidth >= 720) {
-        $project.style.height = window.innerHeight + 'px'
+    if(window.innerHeight> 630) {
+        $sections.forEach(element => {
+            element.style.height = window.innerHeight + 'px'
+        });
+
     }else {
-        $project.style.height = 'auto'
+        $sections.forEach(element => {
+            element.style.height = window.innerWidth + 'px'
+        });
     }
-    $sections.forEach(element => {
-        element.style.height = window.innerHeight + 'px'
-    });
 });
 
 const buttons = document.querySelectorAll(".link")
@@ -38,7 +46,7 @@ function scrollSlow(event) {
 }
 
 /* take this */
-const friend = document.querySelector('.friend')
+const friend = document.querySelector('.friend-img')
 function cosita() {
     friend.style.display = 'block'
 }

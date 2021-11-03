@@ -36,10 +36,12 @@
     display: block;
 }
 .projects {
+    height: auto;
     display: grid;
     grid-template-rows: auto 1fr;
 }
 .project {
+    margin: 14px 0 0;
     width: 80%;
     display: grid;
     justify-self: center;
@@ -51,4 +53,7 @@
 }
 .project-description {
     align-self: center;
+}
+.link2 {
+    font-size: 18px;
 }
