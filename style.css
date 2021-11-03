@@ -225,5 +225,11 @@ html {
     .title-project {
         font-size: 18px;
     }
+    .section-title {
+        font-size: 5rem;
+    }
+    .section-title h3 {
+        font-size: 5rem;
+    }
 }
 

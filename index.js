@@ -5,7 +5,7 @@ $sections.push(document.querySelector(".about"))
 const $project = document.querySelector('.projects')
 
 $sections.forEach(element => {
-    if(window.innerHeight> 500) {
+    if(window.innerHeight> 470) {
         element.style.height = window.innerHeight + 'px'
         if(window.innerHeight>800) {
             $project.style.height = window.innerHeight + 'px'
@@ -20,7 +20,7 @@ $sections.forEach(element => {
 //busca una manera de optimizar
 window.addEventListener('resize', ()=> {
     
-    if(window.innerHeight> 500) {
+    if(window.innerHeight> 470) {
         $sections.forEach(element => {
             element.style.height = window.innerHeight + 'px'
             console.log(window.innerHeight)
