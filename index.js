@@ -5,9 +5,11 @@ $sections.push(document.querySelector(".about"))
 const $project = document.querySelector('.projects')
 
 $sections.forEach(element => {
-    if(window.innerHeight> 630) {
+    if(window.innerHeight> 500) {
         element.style.height = window.innerHeight + 'px'
-       
+        if(window.innerHeight>800) {
+            $project.style.height = window.innerHeight + 'px'
+        }
 
     }else {
         element.style.height = window.innerWidth + 'px'
@@ -15,15 +17,14 @@ $sections.forEach(element => {
     }
 })
 
-
-
 //busca una manera de optimizar
 window.addEventListener('resize', ()=> {
-    if(window.innerHeight> 630) {
+    
+    if(window.innerHeight> 500) {
         $sections.forEach(element => {
             element.style.height = window.innerHeight + 'px'
+            console.log(window.innerHeight)
         });
-
     }else {
         $sections.forEach(element => {
             element.style.height = window.innerWidth + 'px'
