@@ -1,4 +1,5 @@
 .about {
+    height: 100vh;
     display: grid;
     grid-template-rows: 0 1fr;
 }
@@ -37,6 +38,7 @@
     display: grid;
     grid-template-rows: auto 1fr;
 }
+
 .project {
     margin: 14px 0 0;
     width: 80%;

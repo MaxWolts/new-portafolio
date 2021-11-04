@@ -24,7 +24,7 @@
     box-sizing: border-box;
 }
 html {
-    font-size: 18px;
+    font-size: 62.5%;
     font-family: 'Roboto Slab', serif;
     scroll-behavior: smooth;
 }
@@ -44,7 +44,7 @@ html {
     text-transform: uppercase;
 }
 .hero__nav {
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: center;
     color: var(--blue);
     z-index: 1;
@@ -69,18 +69,20 @@ html {
 .hero__text {
     padding: 30px 0;
 }
+.hero__text span, .hero__text p {
+    font-size: 1.7rem;
+}
 .hero-name {
     text-align: center;
-    margin: 0 10px;
 }
 .hero-name h1 {
-    font-size: 6rem;
+    font-size: 10rem;
     font-weight: 300;
     font-family: 'Ruthie', serif;
     color: var(--grey);
 
 }
-.hero_image {
+.hero-image {
     height: 100%;
     width: 100%;
     transform: rotate(180deg);
@@ -88,7 +90,7 @@ html {
     position: absolute;
     z-index: 0;
 }
-.hero_image img {
+.hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -108,12 +110,16 @@ html {
 .sections {
     background-color: var(--back);
 }
+.sections.hero{
+    min-height: 100vh;
+}
 /* textos */
 .section-title {
-    height: 10rem;
+    padding: 20px 0;
+    /* height: 6rem;
     display: grid;
     justify-content: center;
-    align-content: center;
+    align-content: center; */
 }
 .section-title h2{
     font-size: 6rem;
@@ -122,11 +128,14 @@ html {
     color: var(--grey);
     text-align: center;
 }
-.sub-title {
-    color: var(--blue);
+.about-title {
+    font-size: 1.7rem;
     padding: 0 22px;
+    color: var(--blue);
 }
 .text {
+    font-size: 1.7rem;
+    line-height: 2.8rem;
     color: var(--grey);
     padding: 0 22px;
     white-space: pre-line;
@@ -146,6 +155,7 @@ html {
     height: auto;
 }
 .title-project {
+    font-size: 2rem;
     color: var(--blue);
     text-align: center;
     padding: 30px 0;
@@ -204,6 +214,7 @@ html {
     color: var(--yellow);
 }
 .link2:hover {
+    text-decoration: underline;
     color: var(--yellow);
     text-decoration-color: var(--yellow);
 }
@@ -213,7 +224,7 @@ html {
     color: var(--blue);
     text-decoration: underline;
 }
-@media (max-height: 650px) {
+/* @media (max-height: 650px) {
     html {
         font-size: 16px;
     }
@@ -231,5 +242,5 @@ html {
     .section-title h3 {
         font-size: 5rem;
     }
-}
+} */
 
