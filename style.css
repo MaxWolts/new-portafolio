@@ -260,3 +260,6 @@ html {
 .frontend{
     height: 1.7rem;
 }
+.butterfly {
+    opacity: 0;
+}

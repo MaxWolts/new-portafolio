@@ -1,5 +1,4 @@
-// const loading = document.querySelector('.loading')
-// loading.style.display = 'none'
+
 
 /* take this */
 gsap.to('.loading_text', {
@@ -9,6 +8,11 @@ gsap.to('.loading_text', {
 //animations
 const loading = document.querySelector('.loading')
 window.addEventListener("load", async function () {
+    gsap.to('.butterfly', {
+        duration:1,
+        opacity: 1,
+        delay:0
+    })
     await gsap.to('.loading_text2', {
         duration:1,
         opacity: 1,
@@ -18,6 +22,7 @@ window.addEventListener("load", async function () {
     await gsap.to('.loading', {
         duration: 0.5,
         opacity: 0,
+        delay:0.3
     })
     loading.style.display = 'none'
     
@@ -26,7 +31,7 @@ window.addEventListener("load", async function () {
         duration: 0.5,
         opacity: 1,
     })
-    
+    nameAnimation()
     await gsap.to('.frontend', {
         duration:2,
         text: front
@@ -48,9 +53,9 @@ function cosita() {
     friend.style.display = 'block'
 }
 
+const $photo = document.querySelector('.photo')
 //animation circles inicial
 const animationCircles = () => {
-    const $photo = document.querySelector('.photo')
     
     let options = {
         rootMargin: '250px',
@@ -73,3 +78,41 @@ const animationCircles = () => {
     }
 }
 
+//animation circles hover
+$photo.addEventListener('mouseover', () => {
+    gsap.to('.circle1', {
+        duration: 0.2,
+        x: 20
+    })
+    gsap.to('.circle2', {
+        duration: 0.2,
+        x: -20
+    })
+})
+$photo.addEventListener('mouseout', ()=> {
+    gsap.to('.circle1', {
+        duration: 0.2,
+        x: 0
+    })
+    gsap.to('.circle2', {
+        duration: 0.2,
+        x: 0
+    })
+} )
+
+//hero name animation
+const nameMax = document.querySelector('.max')
+const nameAnimation = () => {
+    nameMax.addEventListener('mouseover', () => {
+        gsap.to('.max', {
+            duration: 0.2,
+            scale: 1.3,
+        })
+    })
+    nameMax.addEventListener('mouseout', () => {
+        gsap.to('.max', {
+            duration: 0.2,
+            scale: 1,
+        })
+    })
+}
