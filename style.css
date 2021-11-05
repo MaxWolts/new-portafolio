@@ -40,14 +40,16 @@ html {
     z-index: 1;
     font-weight: 600;
 }
-.hero__text span {
+.welcome {
+    opacity: 0;
     text-transform: uppercase;
 }
 .hero__nav {
-    font-size: 1.6rem;
+    z-index: 3;
     text-align: center;
+    font-size: 1.6rem;
+    opacity: 0;
     color: var(--blue);
-    z-index: 1;
 }
 .hero__nav ul li {
     list-style: none;
@@ -224,23 +226,37 @@ html {
     color: var(--blue);
     text-decoration: underline;
 }
-/* @media (max-height: 650px) {
-    html {
-        font-size: 16px;
-    }
-}
-@media (max-height: 600px) {
-    html {
-        font-size: 14px;
-    }
-    .title-project {
-        font-size: 18px;
-    }
-    .section-title {
-        font-size: 5rem;
-    }
-    .section-title h3 {
-        font-size: 5rem;
-    }
-} */
 
+/*loading*/
+.loading {
+    position: fixed;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    z-index: 3;
+    background-color: var(--blue);
+    height: 100vh;
+    width: 100vw;
+}
+.loading_text, .loading_text2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    opacity: 0;
+    color: var(--grey);
+    letter-spacing: 2px;
+}
+.loading-icon {
+    height: 80px;
+    width: 80px;
+}
+.loading-icon img {
+    color: var(--grey);
+    height: 100%;
+}
+
+.max {
+    opacity: 0;
+}
+.frontend{
+    height: 1.7rem;
+}

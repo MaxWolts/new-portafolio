@@ -14,16 +14,20 @@
 </head>
 
 <body>
+    <div class="loading">
+        <h1 class="loading_text">Hello!</h1>
+        <h1 class="loading_text2">I'm</h1>
+    </div>
     <section class="sections hero">
         <figure class="hero-image">
-            <img src="./assets/background2.jpg" alt="">
+            <img src="./assets/background2.webp" alt="">
         </figure>
-        <div id='welcome' class="hero__text">
+        <div id='welcome' class="welcome hero__text">
             <span>Welcome!</span>
         </div>
         <div class="hero__text hero-name">
-            <h1>Max Wolts</h1>
-            <p>Frontend developer</p>
+            <h1 class='max'>Max Wolts</h1>
+            <p class='frontend'></p>
         </div>
         <nav class="hero__nav hero__text">
             <ul>
@@ -52,7 +56,7 @@
                     <div class="circle1"></div>
                     <div class="circle2"></div>
                     <figure class='photo'>
-                        <img src="./assets/img-f2_.png" alt="">
+                        <img class="photox2" src="./assets/img-fn_.png" alt="">
                     </figure>
                 </div>
             </div>
@@ -63,7 +67,7 @@
                     Estoy constantemente aprendiendo sobre programación, diseño y otras áreas para lograrlo.
                 </p>
                 <p class="text">
-                    Actualmente estudio principalmente <strong>Desarrollo Web</strong>, e <strong>Inglés</strong> en <strong> <a href="https://platzi.com" target="_blank" rel="noopener noreferrer">Platzi</a> </strong> .
+                    Actualmente estudio principalmente <strong>Desarrollo Web</strong> e <strong>Inglés</strong> en <strong> <a href="https://platzi.com" target="_blank" rel="noopener noreferrer">Platzi</a> </strong> .
                     Mi objetivo a futuro es explorar más áreas de la Programación.
                 </p>
                 <p class="text">
@@ -127,9 +131,11 @@
         <p class="text text-end">made with love 💓</p>
         <a href="#friend" class="link2" onclick="cosita()">don't leave alone take this</a>
         <figure class="friend-img">
-            <img id='friend'src="./assets/this.jpg" alt="">
+            <img id='friend'src="./assets/this.webp" alt="">
         </figure>
     </section>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script>
 <script src="./index.js"></script>
 </html>

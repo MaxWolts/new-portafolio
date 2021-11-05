@@ -71,14 +71,14 @@
 .circle1 {
     z-index: 1;
     background-color: var(--grey);
-    top: 1rem;
-    left: -1rem;
+    top: -33rem;
+    left: 0rem;
 }
 .circle2 {
     z-index: 0;
     background-color: var(--blue);
-    top: 0rem;
-    left: -2rem;
+    top: -17rem;
+    left: 0rem;
 }
 .photo-container {
     position: relative;
